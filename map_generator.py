@@ -8,7 +8,7 @@ gentrification_2018_df = pd.read_csv('https://gist.githubusercontent.com/akash-y
 
 
 fig2 = px.choropleth_mapbox(gentrification_2018_df, geojson=tracts,locations = 'geo_id' ,featureidkey="properties.geo_id",color='prediction',
-                           color_continuous_scale="Viridis",
+                           color_continuous_scale="RdBu_r",
                            range_color=(0, 0.1),
                            mapbox_style="carto-positron",
                            zoom=12, center = {"lat": 40.676649, "lon": -74.009550},
@@ -25,7 +25,7 @@ gentrification_2018_ny = pd.read_csv('https://gist.githubusercontent.com/akash-y
 
 #Mapping Gentrification for NY - Current Year
 fig3 = px.choropleth_mapbox(gentrification_2018_ny, geojson=ny_map,locations = 'geo_id' ,featureidkey="properties.geo_id",color='prediction',
-                           color_continuous_scale="Viridis",
+                           color_continuous_scale="RdBu_r",
                            range_color=(0, 1),
                            mapbox_style="carto-positron",
                            zoom=7, center = {"lat": 40.724576, "lon": -73.916812},
@@ -41,7 +41,7 @@ with urlopen('https://gist.githubusercontent.com/akash-y/6aa5d1fe4bfecda6b2ba7bd
 evictions_df = pd.read_csv('https://gist.githubusercontent.com/akash-y/e0ffea12dde217ec49546ffa66461ce5/raw/143edbf60b34e34139545cba079124ed01833652/ny_evictions.csv')
 
 residential_evictions = px.choropleth_mapbox(evictions_df, geojson=ny_zip,locations = 'MODZCTA' ,featureidkey="properties.MODZCTA",color='residential_pctl_score',
-                           color_continuous_scale="Viridis",
+                           color_continuous_scale="RdBu_r",
                            range_color=(0, 100),
                            mapbox_style="carto-positron",
                            zoom=10, center = {"lat": 40.724576, "lon": -73.916812},
@@ -53,7 +53,7 @@ residential_evictions.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 
 #Mapping Commercial Evictions for NY - Current Year
 commercial_evictions = px.choropleth_mapbox(evictions_df, geojson=ny_zip,locations = 'MODZCTA' ,featureidkey="properties.MODZCTA",color='commercial_pctl_score',
-                           color_continuous_scale="Viridis",
+                           color_continuous_scale="RdBu_r",
                            range_color=(0, 100),
                            mapbox_style="carto-positron",
                            zoom=10, center = {"lat": 40.724576, "lon": -73.916812},
@@ -68,7 +68,7 @@ commercial_evictions.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 redhook_5yr_prediction = pd.read_csv('https://gist.githubusercontent.com/akash-y/4b3e114d2cfdd22aab9462d4db942999/raw/16ae0b48e1094d27a4e3460c3cfb4dda6f047161/redhook_5_gentrification_prediction.csv')
 
 fig4 = px.choropleth_mapbox(redhook_5yr_prediction, geojson=tracts,locations = 'geo_id' ,featureidkey="properties.geo_id",color='prediction',
-                           color_continuous_scale="Viridis",
+                           color_continuous_scale="RdBu_r",
                            range_color=(0, 0.1),
                            mapbox_style="carto-positron",
                            zoom=12, center = {"lat": 40.676649, "lon": -74.009550},
@@ -82,7 +82,7 @@ fig4.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 redhook_10yr_prediction = pd.read_csv('https://gist.githubusercontent.com/akash-y/f0a8d865efd78008f49d4f5602ffcf34/raw/1c3f7cb79e521dc3188e817610148ed044dae1b4/redhook_10_gentrification_prediction.csv')
 
 fig5 = px.choropleth_mapbox(redhook_10yr_prediction, geojson=tracts,locations = 'geo_id' ,featureidkey="properties.geo_id",color='prediction',
-                           color_continuous_scale="Viridis",
+                           color_continuous_scale="RdBu_r",
                            range_color=(0, 0.1),
                            mapbox_style="carto-positron",
                            zoom=12, center = {"lat": 40.676649, "lon": -74.009550},
