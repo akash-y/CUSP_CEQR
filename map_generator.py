@@ -28,7 +28,7 @@ fig3 = px.choropleth_mapbox(gentrification_2018_ny, geojson=ny_map,locations = '
                            color_continuous_scale="RdBu_r",
                            range_color=(0, 1),
                            mapbox_style="carto-positron",
-                           zoom=7, center = {"lat": 40.724576, "lon": -73.916812},
+                           zoom=10, center = {"lat": 40.724576, "lon": -73.916812},
                            opacity=0.5,
                            labels={'prediction':'Gentrification Prediction - NY'}
                           )
