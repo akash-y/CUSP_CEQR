@@ -12,15 +12,17 @@ In order to ease the decisioning process for CEQR officials, we developed a visu
 
 ### Execution Steps
 
-1. All data used for the project is available online and can be found here : 
+1. All data used for the project is available online and can be found here : https://drive.google.com/drive/folders/1ZYRsu_MPOeYv4xvpis3i5XB84rJaAQse?usp=sharing
 2. In order to get started with predicting gentrification, run the Gentrification_Labels.ipynb file to generate gentrification labels for the time-period you wish to investigate. 
 3. Save results of the gentrification labels in a CSV and use them in the Gentrification_Prediction.ipynb file. Run the Gentrification_Prediction.ipynb file to generate prediction results based on whatever variables you want to study using ACS and SVI data. 
 4. Run CEQR.ipynb to generate CEQR projects in the area you are interested to study
 5. Run Price_Predictions.ipynb, Business_Displacement.ipynb and Evictions.ipynb for the entirety of New York City or a particular area of study. All data has been spatially indexed within the notebooks to allow for ease of matching with CEQR project locations
 6. Use Demographic_Prediction_Simulations.ipynb to simulate demographic predictions for any future year and use them as results for the Gentrification Prediction Task.
-7. Visualise all the data using the tool avaialble here : 
+7. Visualise all the data using the tool avaialble here : https://github.com/guiml/NYU2020_Dashboard
 
 All Prediction tasks are available in the Notebooks Folder. Results for NYC and Redhook are available as CSV files in the Results folder and all spatial data files are avaialble in the Shapefiles folder. 
+
+### Link to the paper : 
 
 #### What are the advantages of using CEQR Tool over traditional early warning systems or current DCP outlined methods?
 
