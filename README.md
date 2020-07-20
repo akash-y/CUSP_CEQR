@@ -26,4 +26,4 @@ All Prediction tasks are available in the Notebooks Folder. Results for NYC and 
 
 It is our understanding that other analyses have previously produced similar results but still, we could not find other tools that cover the many different aspects of CEQR decision process in one frame as we did. It is worth noting that the CEQR process itself does not use a macro approach(such as racial variables) and have rules that are considered flawed, some of which we found in the literature review. We believe our tool addressed these issues more consistently when compared to similar studies in this area. The findings of this research suggest that change in income and ethnicity related factors play important roles in predicting neighborhood gentrification risk. Since the city agencies currently only use project-specific CEQR analysis but excluding macro demographic and economic factors, our results can potentially provide them with a better understanding of city-wide displacement risk during the decision making process.
 
-#### Link to paper : https://docdro.id/v3jqF8O
+#### Link to paper : https://docdro.id/cadOxNy
